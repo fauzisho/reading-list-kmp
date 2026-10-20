@@ -31,6 +31,11 @@ jobs:
         run: ./gradlew :sync:jvmTest :shared:jvmTest :sync:wasmJsBrowserTest :shared:wasmJsBrowserTest
         env:
           CHROME_BIN: /usr/bin/google-chrome
+      - name: Count the tests
+        if: always()
+        run: |
+          python3 .github/test_summary.py "JVM" "*/build/test-results/jvmTest/*.xml"
+          python3 .github/test_summary.py "Chrome (Wasm)" "*/build/test-results/wasmJsBrowserTest/*.xml"
       - name: Build what ships
         run: ./gradlew :androidApp:assembleRelease :shared:wasmJsBrowserDistribution :server:installDist
       - uses: actions/upload-artifact@v7
@@ -66,6 +71,9 @@ jobs:
           target: google_apis
           arch: x86_64
           script: ./gradlew :shared:connectedAndroidDeviceTest
+      - name: Count the tests
+        if: always()
+        run: python3 .github/test_summary.py "Android emulator" "shared/build/outputs/androidTest-results/connected/**/*.xml"
 
   # What only a Mac with Xcode can do: link the iOS framework and run the shared tests on the iOS simulator.
   ios:
@@ -80,3 +88,6 @@ jobs:
       - uses: gradle/actions/setup-gradle@v6
       - name: Link the framework and run the tests on the simulator
         run: ./gradlew -Pkmp.ios=true :shared:linkDebugFrameworkIosSimulatorArm64 :sync:iosSimulatorArm64Test :shared:iosSimulatorArm64Test
+      - name: Count the tests
+        if: always()
+        run: python3 .github/test_summary.py "iOS simulator" "*/build/test-results/iosSimulatorArm64Test/*.xml"
