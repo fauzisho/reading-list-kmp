@@ -1,0 +1,10 @@
+{
+  "name": "reading-list-sqlite-worker",
+  "version": "1.0.0",
+  "description": "A web worker for androidx.sqlite's WebWorkerSQLiteDriver, using SQLite WASM with the opfs-sahpool VFS",
+  "license": "Apache-2.0",
+  "main": "worker.js",
+  "dependencies": {
+    "@sqlite.org/sqlite-wasm": "3.53.4-build2"
+  }
+}

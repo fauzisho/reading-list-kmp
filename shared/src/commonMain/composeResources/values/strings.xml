@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_title">Reading list</string>
+    <plurals name="read_count">
+        <item quantity="one">%1$d of %2$d book read</item>
+        <item quantity="other">%1$d of %2$d books read</item>
+    </plurals>
+    <string name="running_on">running on %1$s</string>
+    <string name="opening_database">Opening the database</string>
+    <string name="load_failed">The list could not be loaded: %1$s</string>
+    <string name="warning_other_tab">The saved list is open in another tab. Changes made in this tab will not be kept.</string>
+    <string name="warning_no_storage">This browser cannot store the list. Changes will be lost when the page closes.</string>
+    <string name="field_title">Title</string>
+    <string name="field_author">Author</string>
+    <string name="action_add">Add</string>
+    <string name="action_share">Share</string>
+    <string name="action_remove">Remove</string>
+    <string name="has_notes">notes</string>
+    <string name="all_books">← All books</string>
+    <string name="state_read">Read</string>
+    <string name="state_unread">Not read yet</string>
+    <string name="field_notes">Notes</string>
+    <string name="action_save_notes">Save notes</string>
+    <string name="unsaved">Unsaved changes</string>
+    <string name="saved">Saved</string>
+    <string name="loading">Loading…</string>
+    <string name="not_in_list">This book is not in the list.</string>
+    <string name="choose_a_book">Choose a book to see its notes.</string>
+    <string name="sync_action">Sync</string>
+    <string name="sync_never">Not synced yet</string>
+    <string name="sync_running">Syncing…</string>
+    <string name="sync_done">Up to date</string>
+    <string name="sync_offline">Server not reachable</string>
+    <plurals name="sync_pending">
+        <item quantity="one">%1$d change waiting</item>
+        <item quantity="other">%1$d changes waiting</item>
+    </plurals>
+</resources>

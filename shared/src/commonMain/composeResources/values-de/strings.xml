@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_title">Leseliste</string>
+    <plurals name="read_count">
+        <item quantity="one">%1$d von %2$d Buch gelesen</item>
+        <item quantity="other">%1$d von %2$d Büchern gelesen</item>
+    </plurals>
+    <string name="running_on">läuft auf %1$s</string>
+    <string name="opening_database">Datenbank wird geöffnet</string>
+    <string name="load_failed">Die Liste konnte nicht geladen werden: %1$s</string>
+    <string name="warning_other_tab">Die gespeicherte Liste ist in einem anderen Tab geöffnet. Änderungen in diesem Tab werden nicht gespeichert.</string>
+    <string name="warning_no_storage">Dieser Browser kann die Liste nicht speichern. Änderungen gehen beim Schließen der Seite verloren.</string>
+    <string name="field_title">Titel</string>
+    <string name="field_author">Autor</string>
+    <string name="action_add">Hinzufügen</string>
+    <string name="action_share">Teilen</string>
+    <string name="action_remove">Entfernen</string>
+    <string name="has_notes">Notizen</string>
+    <string name="all_books">← Alle Bücher</string>
+    <string name="state_read">Gelesen</string>
+    <string name="state_unread">Noch nicht gelesen</string>
+    <string name="field_notes">Notizen</string>
+    <string name="action_save_notes">Notizen speichern</string>
+    <string name="unsaved">Nicht gespeichert</string>
+    <string name="saved">Gespeichert</string>
+    <string name="loading">Wird geladen …</string>
+    <string name="not_in_list">Dieses Buch steht nicht in der Liste.</string>
+    <string name="choose_a_book">Wähle ein Buch, um seine Notizen zu sehen.</string>
+    <string name="sync_action">Synchronisieren</string>
+    <string name="sync_never">Noch nicht synchronisiert</string>
+    <string name="sync_running">Wird synchronisiert …</string>
+    <string name="sync_done">Aktuell</string>
+    <string name="sync_offline">Server nicht erreichbar</string>
+    <plurals name="sync_pending">
+        <item quantity="one">%1$d Änderung wartet</item>
+        <item quantity="other">%1$d Änderungen warten</item>
+    </plurals>
+</resources>
