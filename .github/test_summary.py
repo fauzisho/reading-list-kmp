@@ -6,6 +6,7 @@ import glob, os, sys, xml.etree.ElementTree as ET
 label, patterns = sys.argv[1], sys.argv[2:]
 tests = failures = skipped = 0
 suites = set()
+timings = []   # the lines DatabaseTimingTest prints: which SQLite, and how fast
 for pattern in patterns:
     for path in glob.glob(pattern, recursive=True):
         root = ET.parse(path).getroot()
@@ -13,7 +14,11 @@ for pattern in patterns:
             tests += int(s.get("tests", 0)); skipped += int(s.get("skipped", 0))
             failures += int(s.get("failures", 0)) + int(s.get("errors", 0))
             suites.add(s.get("name", "").split(".")[-1].split("[")[0])
+        for out in root.iter("system-out"):
+            timings += [l.strip() for l in (out.text or "").splitlines() if l.strip().startswith("TIMING")]
 line = f"{label}: {tests} tests, {failures} failed, {skipped} skipped ({', '.join(sorted(suites)) or 'no results found'})"
 print(f"::{'error' if failures or not tests else 'notice'} title={label}::{line}")
+for t in sorted(set(timings)):
+    print(f"::notice title={label} timing::{label}: {t}")
 if os.environ.get("GITHUB_STEP_SUMMARY"):
     with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f: f.write(f"- {line}\n")
