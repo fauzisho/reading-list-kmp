@@ -91,3 +91,40 @@ jobs:
       - name: Count the tests
         if: always()
         run: python3 .github/test_summary.py "iOS simulator" "*/build/test-results/iosSimulatorArm64Test/*.xml"
+
+  # What Swift sees: the same Kotlin, exported twice, and plain Swift snippets type-checked against both.
+  # The results go to the swift-results branch, readable without signing in.
+  swift:
+    needs: check
+    runs-on: macos-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: 21
+      - uses: gradle/actions/setup-gradle@v6
+      - name: The Objective-C export
+        run: ./gradlew :apple:linkDebugFrameworkIosSimulatorArm64
+      - name: The Swift export (with the environment an Xcode build phase would provide)
+        continue-on-error: true
+        run: |
+          mkdir -p "$PWD/xcbuild/Frameworks"
+          CONFIGURATION=Debug SDK_NAME=iphonesimulator PLATFORM_NAME=iphonesimulator ARCHS=arm64 \
+          TARGET_BUILD_DIR="$PWD/xcbuild" BUILT_PRODUCTS_DIR="$PWD/xcbuild" FRAMEWORKS_FOLDER_PATH=Frameworks \
+          EXPANDED_CODE_SIGN_IDENTITY=- ENABLE_USER_SCRIPT_SANDBOXING=NO \
+          ./gradlew :apple:embedSwiftExportForXcode --stacktrace 2>&1 | tee swift-export.log
+      - name: Type-check the snippets against both
+        if: always()
+        run: |
+          mkdir -p out && cp swift-export.log out/ 2>/dev/null || true
+          find apple/build xcbuild -maxdepth 6 \( -name "*.swiftmodule" -o -name "*.swiftinterface" -o -name "*.modulemap" -o -name "*.a" -o -name "*.framework" \) > out/swift-export-candidates.txt 2>/dev/null || true
+          python3 swift/check.py apple/build/bin/iosSimulatorArm64/debugFramework xcbuild out
+      - name: Publish the results to the swift-results branch
+        if: always()
+        run: |
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          cp -r out /tmp/out && git checkout --orphan swift-results && git rm -rqf . && cp -r /tmp/out/. . && git add -A
+          git commit -qm "Swift export results for ${GITHUB_SHA}" && git push -qf origin swift-results

@@ -1,0 +1,15 @@
+{
+ "01-enum-switch": "an enum, switched exhaustively",
+ "02-sealed-switch": "a sealed interface, switched exhaustively",
+ "03-sealed-cast": "a sealed interface, matched by type",
+ "04-generic-sealed": "a generic sealed type, its value read",
+ "05-default-args-ctor": "a data class built with its default arguments",
+ "06-default-args-fun": "a function called with a default argument left out",
+ "07-top-level": "a top-level function",
+ "08-data-copy": "copy() of a data class",
+ "09-long": "a Long as a Swift integer",
+ "10-nullable": "a nullable return",
+ "11-list": "a List as a Swift array",
+ "12-suspend": "a suspend function with async/await",
+ "13-flow": "a Flow with for await"
+}
