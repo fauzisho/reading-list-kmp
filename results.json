@@ -1,0 +1,217 @@
+{
+ "target": "arm64-apple-ios17.0-simulator",
+ "search_args": {
+  "objc": [
+   "-F",
+   "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/bin/iosSimulatorArm64/debugFramework"
+  ],
+  "swift-export": []
+ },
+ "results": {
+  "01-enum-switch": {
+   "what": "an enum, switched exhaustively",
+   "objc": {
+    "ok": false,
+    "errors": [
+     "switch must be exhaustive"
+    ]
+   },
+   "swift-export": {
+    "ok": false,
+    "errors": [
+     "no such module 'ReadingKit'"
+    ]
+   }
+  },
+  "02-sealed-switch": {
+   "what": "a sealed interface, switched exhaustively",
+   "objc": {
+    "ok": false,
+    "errors": [
+     "type 'any Route' has no member 'bookList'",
+     "type 'any Route' has no member 'bookDetail'"
+    ]
+   },
+   "swift-export": {
+    "ok": false,
+    "errors": [
+     "no such module 'ReadingKit'"
+    ]
+   }
+  },
+  "02b-sealed-switch-sealedtype": {
+   "what": "a sealed interface, switched through sealedType()",
+   "objc": {
+    "ok": false,
+    "errors": [
+     "value of type 'any Route' has no member 'sealedType'"
+    ]
+   },
+   "swift-export": {
+    "ok": false,
+    "errors": [
+     "no such module 'ReadingKit'"
+    ]
+   }
+  },
+  "03-sealed-cast": {
+   "what": "a sealed interface, matched by type",
+   "objc": {
+    "ok": false,
+    "errors": [
+     "'BookDetail' is not a member type of protocol 'ReadingKit.Route'"
+    ]
+   },
+   "swift-export": {
+    "ok": false,
+    "errors": [
+     "no such module 'ReadingKit'"
+    ]
+   }
+  },
+  "04-generic-sealed": {
+   "what": "a generic sealed type, its value read",
+   "objc": {
+    "ok": false,
+    "errors": [
+     "'Done' is not a member type of protocol 'ReadingKit.Load'"
+    ]
+   },
+   "swift-export": {
+    "ok": false,
+    "errors": [
+     "no such module 'ReadingKit'"
+    ]
+   }
+  },
+  "05-default-args-ctor": {
+   "what": "a data class built with its default arguments",
+   "objc": {
+    "ok": false,
+    "errors": [
+     "missing arguments for parameters 'read', 'notes' in call"
+    ]
+   },
+   "swift-export": {
+    "ok": false,
+    "errors": [
+     "no such module 'ReadingKit'"
+    ]
+   }
+  },
+  "06-default-args-fun": {
+   "what": "a function called with a default argument left out",
+   "objc": {
+    "ok": false,
+    "errors": [
+     "cannot find 'readCount' in scope"
+    ]
+   },
+   "swift-export": {
+    "ok": false,
+    "errors": [
+     "no such module 'ReadingKit'"
+    ]
+   }
+  },
+  "07-top-level": {
+   "what": "a top-level function",
+   "objc": {
+    "ok": false,
+    "errors": [
+     "cannot find 'merge' in scope"
+    ]
+   },
+   "swift-export": {
+    "ok": false,
+    "errors": [
+     "no such module 'ReadingKit'"
+    ]
+   }
+  },
+  "08-data-copy": {
+   "what": "copy() of a data class",
+   "objc": {
+    "ok": false,
+    "errors": [
+     "extra argument 'read' in call"
+    ]
+   },
+   "swift-export": {
+    "ok": false,
+    "errors": [
+     "no such module 'ReadingKit'"
+    ]
+   }
+  },
+  "09-long": {
+   "what": "a Long as a Swift integer",
+   "objc": {
+    "ok": true,
+    "errors": []
+   },
+   "swift-export": {
+    "ok": false,
+    "errors": [
+     "no such module 'ReadingKit'"
+    ]
+   }
+  },
+  "10-nullable": {
+   "what": "a nullable return",
+   "objc": {
+    "ok": true,
+    "errors": []
+   },
+   "swift-export": {
+    "ok": false,
+    "errors": [
+     "no such module 'ReadingKit'"
+    ]
+   }
+  },
+  "11-list": {
+   "what": "a List as a Swift array",
+   "objc": {
+    "ok": true,
+    "errors": []
+   },
+   "swift-export": {
+    "ok": false,
+    "errors": [
+     "no such module 'ReadingKit'"
+    ]
+   }
+  },
+  "12-suspend": {
+   "what": "a suspend function with async/await",
+   "objc": {
+    "ok": false,
+    "errors": [
+     "cannot convert return expression of type 'KotlinBoolean' to return type 'Bool'"
+    ]
+   },
+   "swift-export": {
+    "ok": false,
+    "errors": [
+     "no such module 'ReadingKit'"
+    ]
+   }
+  },
+  "13-flow": {
+   "what": "a Flow with for await",
+   "objc": {
+    "ok": false,
+    "errors": [
+     "for-in loop requires 'any Kotlinx_coroutines_coreFlow' to conform to 'AsyncSequence'"
+    ]
+   },
+   "swift-export": {
+    "ok": false,
+    "errors": [
+     "no such module 'ReadingKit'"
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,8 @@
+framework module "ReadingKit" {
+    umbrella header "ReadingKit.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}

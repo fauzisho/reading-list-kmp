@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/OrgJetbrainsKotlinxKotlinxCoroutinesCore.build/Objects-normal/arm64/OrgJetbrainsKotlinxKotlinxCoroutinesCore-primary.dia",
+    "emit-module-dependencies" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/OrgJetbrainsKotlinxKotlinxCoroutinesCore.build/Objects-normal/arm64/OrgJetbrainsKotlinxKotlinxCoroutinesCore-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/OrgJetbrainsKotlinxKotlinxCoroutinesCore.build/Objects-normal/arm64/OrgJetbrainsKotlinxKotlinxCoroutinesCore-primary-emit-module.dia",
+    "pch" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/OrgJetbrainsKotlinxKotlinxCoroutinesCore.build/Objects-normal/arm64/OrgJetbrainsKotlinxKotlinxCoroutinesCore-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/OrgJetbrainsKotlinxKotlinxCoroutinesCore.build/Objects-normal/arm64/OrgJetbrainsKotlinxKotlinxCoroutinesCore-primary.swiftdeps"
+  },
+  "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMPackage/iosSimulatorArm64/Debug/Sources/OrgJetbrainsKotlinxKotlinxCoroutinesCore/OrgJetbrainsKotlinxKotlinxCoroutinesCore.swift" : {
+    "const-values" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/OrgJetbrainsKotlinxKotlinxCoroutinesCore.build/Objects-normal/arm64/OrgJetbrainsKotlinxKotlinxCoroutinesCore.swiftconstvalues",
+    "dependencies" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/OrgJetbrainsKotlinxKotlinxCoroutinesCore.build/Objects-normal/arm64/OrgJetbrainsKotlinxKotlinxCoroutinesCore.d",
+    "diagnostics" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/OrgJetbrainsKotlinxKotlinxCoroutinesCore.build/Objects-normal/arm64/OrgJetbrainsKotlinxKotlinxCoroutinesCore.dia",
+    "index-unit-output-path" : "/ReadingKit.build/Debug-iphonesimulator/OrgJetbrainsKotlinxKotlinxCoroutinesCore.build/Objects-normal/arm64/OrgJetbrainsKotlinxKotlinxCoroutinesCore.o",
+    "llvm-bc" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/OrgJetbrainsKotlinxKotlinxCoroutinesCore.build/Objects-normal/arm64/OrgJetbrainsKotlinxKotlinxCoroutinesCore.bc",
+    "object" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/OrgJetbrainsKotlinxKotlinxCoroutinesCore.build/Objects-normal/arm64/OrgJetbrainsKotlinxKotlinxCoroutinesCore.o",
+    "swift-dependencies" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/OrgJetbrainsKotlinxKotlinxCoroutinesCore.build/Objects-normal/arm64/OrgJetbrainsKotlinxKotlinxCoroutinesCore.swiftdeps",
+    "swiftmodule" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/OrgJetbrainsKotlinxKotlinxCoroutinesCore.build/Objects-normal/arm64/OrgJetbrainsKotlinxKotlinxCoroutinesCore~partial.swiftmodule"
+  }
+}

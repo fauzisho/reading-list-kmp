@@ -1,0 +1,16 @@
+apple/build/SPMDerivedData/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/KotlinRuntimeSupport.modulemap
+apple/build/SPMDerivedData/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/KotlinCoroutineSupport.modulemap
+apple/build/SPMDerivedData/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/OrgJetbrainsKotlinxKotlinxCoroutinesCore.modulemap
+apple/build/SPMDerivedData/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/ReadingKit.modulemap
+apple/build/SPMDerivedData/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/ExportedKotlinPackages.modulemap
+apple/build/bin/iosSimulatorArm64/debugFramework/ReadingKit.framework
+apple/build/bin/iosSimulatorArm64/debugFramework/ReadingKit.framework/Modules/module.modulemap
+apple/build/SPMPackage/iosSimulatorArm64/Debug/OtherIncludes/SharedBridge_OrgJetbrainsKotlinxKotlinxCoroutinesCore/module.modulemap
+apple/build/SPMPackage/iosSimulatorArm64/Debug/OtherIncludes/KotlinRuntime/module.modulemap
+apple/build/SPMPackage/iosSimulatorArm64/Debug/OtherIncludes/KotlinRuntimeSupportBridge/module.modulemap
+apple/build/SPMPackage/iosSimulatorArm64/Debug/OtherIncludes/KotlinCoroutineSupportBridge/module.modulemap
+apple/build/SPMPackage/iosSimulatorArm64/Debug/OtherIncludes/SharedBridge_ReadingKit/module.modulemap
+apple/build/SPMBuild/iosSimulatorArm64/Debug/dd-interfaces/ExportedKotlinPackages.swiftmodule
+apple/build/SPMBuild/iosSimulatorArm64/Debug/dd-interfaces/ExportedKotlinPackages.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+apple/build/SPMBuild/iosSimulatorArm64/Debug/dd-interfaces/KotlinRuntimeSupport.swiftmodule
+apple/build/SPMBuild/iosSimulatorArm64/Debug/dd-interfaces/KotlinRuntimeSupport.swiftmodule/arm64-apple-ios-simulator.swiftmodule

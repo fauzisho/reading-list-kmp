@@ -1,0 +1,4 @@
+module OrgJetbrainsKotlinxKotlinxCoroutinesCore {
+header "OrgJetbrainsKotlinxKotlinxCoroutinesCore-Swift.h"
+export *
+}

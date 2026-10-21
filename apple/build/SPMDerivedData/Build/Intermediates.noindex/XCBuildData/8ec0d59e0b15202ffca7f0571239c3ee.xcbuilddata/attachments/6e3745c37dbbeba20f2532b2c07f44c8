@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/ReadingKit.build/Objects-normal/arm64/ReadingKit-primary.dia",
+    "emit-module-dependencies" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/ReadingKit.build/Objects-normal/arm64/ReadingKit-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/ReadingKit.build/Objects-normal/arm64/ReadingKit-primary-emit-module.dia",
+    "pch" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/ReadingKit.build/Objects-normal/arm64/ReadingKit-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/ReadingKit.build/Objects-normal/arm64/ReadingKit-primary.swiftdeps"
+  },
+  "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMPackage/iosSimulatorArm64/Debug/Sources/ReadingKit/ReadingKit.swift" : {
+    "const-values" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/ReadingKit.build/Objects-normal/arm64/ReadingKit.swiftconstvalues",
+    "dependencies" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/ReadingKit.build/Objects-normal/arm64/ReadingKit.d",
+    "diagnostics" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/ReadingKit.build/Objects-normal/arm64/ReadingKit.dia",
+    "index-unit-output-path" : "/ReadingKit.build/Debug-iphonesimulator/ReadingKit.build/Objects-normal/arm64/ReadingKit.o",
+    "llvm-bc" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/ReadingKit.build/Objects-normal/arm64/ReadingKit.bc",
+    "object" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/ReadingKit.build/Objects-normal/arm64/ReadingKit.o",
+    "swift-dependencies" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/ReadingKit.build/Objects-normal/arm64/ReadingKit.swiftdeps",
+    "swiftmodule" : "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SPMDerivedData/Build/Intermediates.noindex/ReadingKit.build/Debug-iphonesimulator/ReadingKit.build/Objects-normal/arm64/ReadingKit~partial.swiftmodule"
+  }
+}

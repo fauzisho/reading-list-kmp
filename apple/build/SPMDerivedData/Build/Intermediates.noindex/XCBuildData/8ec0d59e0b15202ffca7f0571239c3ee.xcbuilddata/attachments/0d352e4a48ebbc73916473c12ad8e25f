@@ -1,0 +1,4 @@
+module ReadingKit {
+header "ReadingKit-Swift.h"
+export *
+}

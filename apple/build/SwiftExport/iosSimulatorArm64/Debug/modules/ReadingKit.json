@@ -1,0 +1,66 @@
+{
+  "modules": [
+    {
+      "swiftApi": "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SwiftExport/iosSimulatorArm64/Debug/ExportedKotlinPackages/ExportedKotlinPackages.swift",
+      "name": "ExportedKotlinPackages",
+      "type": "SWIFT_ONLY",
+      "dependencies": []
+    },
+    {
+      "files": {
+        "swiftApi": "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SwiftExport/iosSimulatorArm64/Debug/KotlinRuntimeSupport/KotlinRuntimeSupport/KotlinRuntimeSupport.swift",
+        "kotlinBridges": "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SwiftExport/iosSimulatorArm64/Debug/KotlinRuntimeSupport/KotlinRuntimeSupport/KotlinRuntimeSupport.kt",
+        "cHeaderBridges": "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SwiftExport/iosSimulatorArm64/Debug/KotlinRuntimeSupport/KotlinRuntimeSupport/KotlinRuntimeSupport.h"
+      },
+      "bridgeName": "KotlinRuntimeSupportBridge",
+      "name": "KotlinRuntimeSupport",
+      "type": "BRIDGES_TO_KOTLIN",
+      "dependencies": []
+    },
+    {
+      "files": {
+        "swiftApi": "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SwiftExport/iosSimulatorArm64/Debug/KotlinCoroutineSupport/KotlinCoroutineSupport/KotlinCoroutineSupport.swift",
+        "kotlinBridges": "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SwiftExport/iosSimulatorArm64/Debug/KotlinCoroutineSupport/KotlinCoroutineSupport/KotlinCoroutineSupport.kt",
+        "cHeaderBridges": "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SwiftExport/iosSimulatorArm64/Debug/KotlinCoroutineSupport/KotlinCoroutineSupport/KotlinCoroutineSupport.h"
+      },
+      "bridgeName": "KotlinCoroutineSupportBridge",
+      "name": "KotlinCoroutineSupport",
+      "type": "BRIDGES_TO_KOTLIN",
+      "dependencies": [
+        "KotlinRuntimeSupport"
+      ]
+    },
+    {
+      "files": {
+        "swiftApi": "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SwiftExport/iosSimulatorArm64/Debug/files/ReadingKit/ReadingKit.swift",
+        "kotlinBridges": "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SwiftExport/iosSimulatorArm64/Debug/files/ReadingKit/ReadingKit.kt",
+        "cHeaderBridges": "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SwiftExport/iosSimulatorArm64/Debug/files/ReadingKit/ReadingKit.h"
+      },
+      "bridgeName": "SharedBridge_ReadingKit",
+      "name": "ReadingKit",
+      "type": "BRIDGES_TO_KOTLIN",
+      "dependencies": [
+        "ExportedKotlinPackages",
+        "KotlinRuntimeSupport",
+        "KotlinCoroutineSupport",
+        "OrgJetbrainsKotlinxKotlinxCoroutinesCore"
+      ]
+    },
+    {
+      "files": {
+        "swiftApi": "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SwiftExport/iosSimulatorArm64/Debug/files/OrgJetbrainsKotlinxKotlinxCoroutinesCore/OrgJetbrainsKotlinxKotlinxCoroutinesCore.swift",
+        "kotlinBridges": "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SwiftExport/iosSimulatorArm64/Debug/files/OrgJetbrainsKotlinxKotlinxCoroutinesCore/OrgJetbrainsKotlinxKotlinxCoroutinesCore.kt",
+        "cHeaderBridges": "/Users/runner/work/reading-list-kmp/reading-list-kmp/apple/build/SwiftExport/iosSimulatorArm64/Debug/files/OrgJetbrainsKotlinxKotlinxCoroutinesCore/OrgJetbrainsKotlinxKotlinxCoroutinesCore.h"
+      },
+      "bridgeName": "SharedBridge_OrgJetbrainsKotlinxKotlinxCoroutinesCore",
+      "name": "OrgJetbrainsKotlinxKotlinxCoroutinesCore",
+      "type": "BRIDGES_TO_KOTLIN",
+      "dependencies": [
+        "ExportedKotlinPackages",
+        "KotlinRuntimeSupport",
+        "KotlinCoroutineSupport"
+      ]
+    }
+  ],
+  "timestamp": 1792561528903
+}

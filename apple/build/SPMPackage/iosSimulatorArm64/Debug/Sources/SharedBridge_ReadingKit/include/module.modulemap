@@ -1,0 +1,5 @@
+module "SharedBridge_ReadingKit" {
+    umbrella "."
+    export *
+    link "ReadingKit"
+}
