@@ -115,6 +115,7 @@ jobs:
           CONFIGURATION=Debug SDK_NAME=iphonesimulator PLATFORM_NAME=iphonesimulator ARCHS=arm64 \
           TARGET_BUILD_DIR="$PWD/xcbuild" BUILT_PRODUCTS_DIR="$PWD/xcbuild" FRAMEWORKS_FOLDER_PATH=Frameworks \
           EXPANDED_CODE_SIGN_IDENTITY=- ENABLE_USER_SCRIPT_SANDBOXING=NO \
+          DEPLOYMENT_TARGET_SETTING_NAME=IPHONEOS_DEPLOYMENT_TARGET IPHONEOS_DEPLOYMENT_TARGET=17.0 \
           ./gradlew :apple:embedSwiftExportForXcode --stacktrace 2>&1 | tee swift-export.log
       - name: Type-check the snippets against both
         if: always()

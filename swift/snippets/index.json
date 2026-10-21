@@ -11,5 +11,6 @@
  "10-nullable": "a nullable return",
  "11-list": "a List as a Swift array",
  "12-suspend": "a suspend function with async/await",
- "13-flow": "a Flow with for await"
+ "13-flow": "a Flow with for await",
+ "02b-sealed-switch-sealedtype": "a sealed interface, switched through sealedType()"
 }
